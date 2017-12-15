@@ -1,0 +1,81 @@
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #101e34;
+  overflow: hidden;
+}
+
+.background-cover {
+  width: 150%;
+  min-width: 100%;
+  height: 130%;
+  left: 50%;
+  top: 0;
+  position: fixed;
+  background-color: #1a1a2a;
+    /*-webkit-background-image: radial-gradient(circle, transparent 0%, #0a0b13 100%), url(../images/[NOISEIMAGEHERE]);
+  background-image: radial-gradient(circle, transparent 0%, #0a0b13 75%), url(../images/[NOISEIMAGEHERE]);*/
+  background-repeat: repeat;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-position: center;
+  z-index: 0;
+}
+
+.background-text {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 130px;
+  line-height: 1;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  top: 65px;
+  margin: 0;
+}
+
+.background-text .blue {
+  color: #46aeff;
+}
+
+.background-text .red {
+  color: #ff4646;
+}
+
+.pai {
+  width: 70%;
+  height: 90%;
+  position: fixed;
+  bottom: 0;
+  margin-left: 15%;
+}
+
+.pai .pai-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pai .body-main {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pai .body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/pai_main.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: 100% 100%;
+  background-position: 100% 0;
+}
