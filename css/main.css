@@ -10,16 +10,12 @@ body {
 }
 
 .background-cover {
-  width: 150%;
+  width: 100%;
   min-width: 100%;
-  height: 130%;
-  left: 50%;
-  top: 0;
-  position: fixed;
+  height: 100%;
   background-color: #1a1a2a;
     /*-webkit-background-image: radial-gradient(circle, transparent 0%, #0a0b13 100%), url(../images/[NOISEIMAGEHERE]);
   background-image: radial-gradient(circle, transparent 0%, #0a0b13 75%), url(../images/[NOISEIMAGEHERE]);*/
-  background-repeat: repeat;
   -webkit-background-size: auto;
   background-size: auto;
   background-position: center;
@@ -38,6 +34,7 @@ body {
   color: #fff;
   top: 65px;
   margin: 0;
+  cursor: default;
 }
 
 .background-text .blue {
@@ -48,34 +45,43 @@ body {
   color: #ff4646;
 }
 
-.pai {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 20%;
-  margin-left: 0;
+#thePie {
+  position:absolute;
 }
 
-.pai .pai-inner {
+.pai-container {
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+  bottom: 0;
+}
+
+.pai-container .pai-inner {
   position: relative;
   width: 100%;
   height: 100%;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  -o-transform: translateY(30%);
+  transform: 30%;
 }
 
-.pai .body-main {
+.pai-container .pai-cont {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow:hidden;
+  margin-left: 15%;
 }
 
-.pai .body {
+.pai-container .pai-int {
   width: 100%;
   height: 100%;
-  background-image: url(../images/pai_main.png);
+  background-image: url('../images/pai_main.png');
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: 100% 100%;
   background-position: 100% 0;
+  transform:translateX(-10%);
 }
