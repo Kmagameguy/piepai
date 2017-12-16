@@ -6,9 +6,15 @@ $(document).mouseup(function(clicker) {
   if(!$('#thePie').hasClass('pieClass')) {
     $('#thePie').attr('src', 'images/pie.png');
     $('#thePie').addClass('pieClass');
+
+    $('#Pai').attr('src', 'images/pai_main.png');
+    $('#Pai').removeClass('sadPai');
   }
   else {
     $('#thePie').attr('src', 'images/finger.png');
     $('#thePie').removeClass('pieClass');
+
+    $('#Pai').attr('src','images/pai_second.png');
+    $('#Pai').addClass('sadPai');
   }
 });
