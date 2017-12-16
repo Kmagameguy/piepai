@@ -45,43 +45,55 @@ body {
   color: #ff4646;
 }
 
-#thePie {
-  position:absolute;
-}
-
-.pai-container {
+#Pai {
   width: 1000px;
   height: 1000px;
-  position: fixed;
-  bottom: 0;
-}
-
-.pai-container .pai-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateY(30%);
-  -ms-transform: translateY(30%);
-  -o-transform: translateY(30%);
-  transform: 30%;
-}
-
-.pai-container .pai-cont {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
-  margin-left: 15%;
+  left: 50%;
+  top: 20%;
+  margin-left: -500px;
 }
 
-.pai-container .pai-int {
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/pai_main.png');
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  background-size: 100% 100%;
-  background-position: 100% 0;
-  transform:translateX(-10%);
+#thePie {
+  transform:scale(0.8, 0.8);
+}
+
+@media (max-width: 700px) {
+  .background-text {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .background-text {
+    font-size: 60px;
+  }
+}
+
+@media (max-height: 700px) {
+  #Pai {
+    width: 700px;
+    height: 700px;
+    top: 20%;
+    margin-left: -350px;
+  }
+  #thePie {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@media (max-height: 500px) {
+  #Pai {
+    width: 400px;
+    height: 400px;
+    top: 30%;
+    margin-left: -200px;
+  }
+  #thePie {
+    transform: scale(0.3, 0.3);
+  }
+}
+
+#thePie {
+  position:absolute;
 }
